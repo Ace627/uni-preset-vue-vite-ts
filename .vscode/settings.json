@@ -1,0 +1,23 @@
+{
+  // 配置语言的文件关联(如 `"*.extension": "html"`)。这些关联的优先级高于已安装语言的默认关联。
+  "files.associations": {
+    "manifest.json": "jsonc",
+    "pages.json": "jsonc"
+  },
+
+  /** create-uniapp-view 插件配置 */
+  // 创建视图时，是否创建同名文件夹
+  "create-uniapp-view.directory": true,
+  // 创建文件夹中生成的文件名
+  "create-uniapp-view.name": "index",
+  // 创建视图时，选择的 CSS 预处理器类型 scss | less | stylus
+  "create-uniapp-view.style": "scss",
+  // 创建模版时，是否使用 <style scoped>
+  "create-uniapp-view.scoped": true,
+  // 选择创建的模板 vue2 vue3 composition-api(vue2)
+  "create-uniapp-view.template": "vue3",
+  // 创建视图时，是否选择 TypeScript 作为默认语言
+  "create-uniapp-view.typescript": true,
+  // 创建 vue3 模版时，是否使用 <script setup>
+  "create-uniapp-view.setup": true
+}
