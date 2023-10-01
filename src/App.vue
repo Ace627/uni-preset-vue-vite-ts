@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onLaunch, onShow, onHide } from '@dcloudio/uni-app'
-
 /** 当 uni-app 初始化完成时触发（全局只触发一次） */
 onLaunch(() => {
   console.log('App Launch')

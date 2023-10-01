@@ -12,7 +12,7 @@ export default defineConfig(({ command, mode }) => {
     plugins: [
       uni(),
       AutoImport({
-        imports: ['vue', 'pinia'], // 自动导入 vue、vue-router、Pinia 相关函数
+        imports: ['vue', 'pinia', 'uni-app'], // 自动导入 vue、vue-router、Pinia 相关函数
         dts: 'types/auto-import.d.ts',
         dirs: ['src/store/modules', 'src/hooks'], // 配置其它需要导入的文件目录
       }),
