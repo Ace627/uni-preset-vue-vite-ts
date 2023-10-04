@@ -44,6 +44,9 @@ dependencies:
   '@dcloudio/uni-quickapp-webview':
     specifier: 3.0.0-3081220230817001
     version: 3.0.0-3081220230817001(postcss@8.4.29)(vue@3.3.4)
+  '@dcloudio/uni-ui':
+    specifier: ^1.4.28
+    version: registry.npmmirror.com/@dcloudio/uni-ui@1.4.28
   pinia:
     specifier: 2.0.36
     version: 2.0.36(typescript@5.2.2)(vue@3.3.4)
@@ -73,6 +76,9 @@ devDependencies:
   '@types/wechat-miniprogram':
     specifier: ^3.4.3
     version: 3.4.3
+  '@uni-helper/uni-ui-types':
+    specifier: ^0.5.11
+    version: registry.npmmirror.com/@uni-helper/uni-ui-types@0.5.11
   '@vue/runtime-core':
     specifier: ^3.3.4
     version: 3.3.4
@@ -4778,6 +4784,18 @@ packages:
     version: 0.2.3
     dev: true
 
+  registry.npmmirror.com/@dcloudio/types@3.3.3:
+    resolution: {integrity: sha512-xfp88QOJ2fgCzv49HhEGrX0L+3xDsCyyvcoApL7z0J1Lr7tqPUkxqAVBe9zBlKsDX/mO9mNj7NzKIisHfp+fNQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@dcloudio/types/-/types-3.3.3.tgz}
+    name: '@dcloudio/types'
+    version: 3.3.3
+    dev: true
+
+  registry.npmmirror.com/@dcloudio/uni-ui@1.4.28:
+    resolution: {integrity: sha512-e/lSbvR79KH9+d3D4ueNbvD6szigjO/5IyjBNmiTqaj0PTS324fBV3L6f3s1qpkYonM4rdOl000hVOcAg6Gh/A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@dcloudio/uni-ui/-/uni-ui-1.4.28.tgz}
+    name: '@dcloudio/uni-ui'
+    version: 1.4.28
+    dev: false
+
   registry.npmmirror.com/@esbuild/android-arm64@0.17.19:
     resolution: {integrity: sha512-KBMWvEZooR7+kzY0BtbTQn0OAYY7CsiydT63pVEaPtVYF0hXbUaOyZog37DKxK7NF3XacBJOpYT4adIJh+avxA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@esbuild/android-arm64/-/android-arm64-0.17.19.tgz}
     name: '@esbuild/android-arm64'
@@ -5662,6 +5680,125 @@ packages:
       '@types/yargs-parser': registry.npmmirror.com/@types/yargs-parser@21.0.0
     dev: true
 
+  registry.npmmirror.com/@uni-helper/uni-ui-types@0.5.11:
+    resolution: {integrity: sha512-tGX4llyJBdq9TmNjmZYKu4eueUWUU0F/YgZeTWDgVCmlgYGavhcUL7R+I0Uxe5hGoqFXkNf0ZnmG/WFZWfK/HQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@uni-helper/uni-ui-types/-/uni-ui-types-0.5.11.tgz}
+    name: '@uni-helper/uni-ui-types'
+    version: 0.5.11
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      '@uni-helper/uni-app-types': ^0.5.1
+    peerDependenciesMeta:
+      '@uni-helper/uni-app-types':
+        optional: true
+    dependencies:
+      '@dcloudio/types': registry.npmmirror.com/@dcloudio/types@3.3.3
+      vue3: registry.npmmirror.com/vue@3.3.4
+    dev: true
+
+  registry.npmmirror.com/@vue/compiler-core@3.3.4:
+    resolution: {integrity: sha512-cquyDNvZ6jTbf/+x+AgM2Arrp6G4Dzbb0R64jiG804HRMfRiFXWI6kqUVqZ6ZR0bQhIoQjB4+2bhNtVwndW15g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-core/-/compiler-core-3.3.4.tgz}
+    name: '@vue/compiler-core'
+    version: 3.3.4
+    dependencies:
+      '@babel/parser': registry.npmmirror.com/@babel/parser@7.22.16
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
+      estree-walker: registry.npmmirror.com/estree-walker@2.0.2
+      source-map-js: registry.npmmirror.com/source-map-js@1.0.2
+    dev: true
+
+  registry.npmmirror.com/@vue/compiler-dom@3.3.4:
+    resolution: {integrity: sha512-wyM+OjOVpuUukIq6p5+nwHYtj9cFroz9cwkfmP9O1nzH68BenTTv0u7/ndggT8cIQlnBeOo6sUT/gvHcIkLA5w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-dom/-/compiler-dom-3.3.4.tgz}
+    name: '@vue/compiler-dom'
+    version: 3.3.4
+    dependencies:
+      '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.3.4
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
+    dev: true
+
+  registry.npmmirror.com/@vue/compiler-sfc@3.3.4:
+    resolution: {integrity: sha512-6y/d8uw+5TkCuzBkgLS0v3lSM3hJDntFEiUORM11pQ/hKvkhSKZrXW6i69UyXlJQisJxuUEJKAWEqWbWsLeNKQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-sfc/-/compiler-sfc-3.3.4.tgz}
+    name: '@vue/compiler-sfc'
+    version: 3.3.4
+    dependencies:
+      '@babel/parser': registry.npmmirror.com/@babel/parser@7.22.16
+      '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.3.4
+      '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom@3.3.4
+      '@vue/compiler-ssr': registry.npmmirror.com/@vue/compiler-ssr@3.3.4
+      '@vue/reactivity-transform': registry.npmmirror.com/@vue/reactivity-transform@3.3.4
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
+      estree-walker: registry.npmmirror.com/estree-walker@2.0.2
+      magic-string: registry.npmmirror.com/magic-string@0.30.3
+      postcss: registry.npmmirror.com/postcss@8.4.29
+      source-map-js: registry.npmmirror.com/source-map-js@1.0.2
+    dev: true
+
+  registry.npmmirror.com/@vue/compiler-ssr@3.3.4:
+    resolution: {integrity: sha512-m0v6oKpup2nMSehwA6Uuu+j+wEwcy7QmwMkVNVfrV9P2qE5KshC6RwOCq8fjGS/Eak/uNb8AaWekfiXxbBB6gQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-ssr/-/compiler-ssr-3.3.4.tgz}
+    name: '@vue/compiler-ssr'
+    version: 3.3.4
+    dependencies:
+      '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom@3.3.4
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
+    dev: true
+
+  registry.npmmirror.com/@vue/reactivity-transform@3.3.4:
+    resolution: {integrity: sha512-MXgwjako4nu5WFLAjpBnCj/ieqcjE2aJBINUNQzkZQfzIZA4xn+0fV1tIYBJvvva3N3OvKGofRLvQIwEQPpaXw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/reactivity-transform/-/reactivity-transform-3.3.4.tgz}
+    name: '@vue/reactivity-transform'
+    version: 3.3.4
+    dependencies:
+      '@babel/parser': registry.npmmirror.com/@babel/parser@7.22.16
+      '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.3.4
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
+      estree-walker: registry.npmmirror.com/estree-walker@2.0.2
+      magic-string: registry.npmmirror.com/magic-string@0.30.3
+    dev: true
+
+  registry.npmmirror.com/@vue/reactivity@3.3.4:
+    resolution: {integrity: sha512-kLTDLwd0B1jG08NBF3R5rqULtv/f8x3rOFByTDz4J53ttIQEDmALqKqXY0J+XQeN0aV2FBxY8nJDf88yvOPAqQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.3.4.tgz}
+    name: '@vue/reactivity'
+    version: 3.3.4
+    dependencies:
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
+    dev: true
+
+  registry.npmmirror.com/@vue/runtime-core@3.3.4:
+    resolution: {integrity: sha512-R+bqxMN6pWO7zGI4OMlmvePOdP2c93GsHFM/siJI7O2nxFRzj55pLwkpCedEY+bTMgp5miZ8CxfIZo3S+gFqvA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/runtime-core/-/runtime-core-3.3.4.tgz}
+    name: '@vue/runtime-core'
+    version: 3.3.4
+    dependencies:
+      '@vue/reactivity': registry.npmmirror.com/@vue/reactivity@3.3.4
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
+    dev: true
+
+  registry.npmmirror.com/@vue/runtime-dom@3.3.4:
+    resolution: {integrity: sha512-Aj5bTJ3u5sFsUckRghsNjVTtxZQ1OyMWCr5dZRAPijF/0Vy4xEoRCwLyHXcj4D0UFbJ4lbx3gPTgg06K/GnPnQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/runtime-dom/-/runtime-dom-3.3.4.tgz}
+    name: '@vue/runtime-dom'
+    version: 3.3.4
+    dependencies:
+      '@vue/runtime-core': registry.npmmirror.com/@vue/runtime-core@3.3.4
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
+      csstype: registry.npmmirror.com/csstype@3.1.2
+    dev: true
+
+  registry.npmmirror.com/@vue/server-renderer@3.3.4(vue@3.3.4):
+    resolution: {integrity: sha512-Q6jDDzR23ViIb67v+vM1Dqntu+HUexQcsWKhhQa4ARVzxOY2HbC7QRW/ggkDBd5BU+uM1sV6XOAP0b216o34JQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/server-renderer/-/server-renderer-3.3.4.tgz}
+    id: registry.npmmirror.com/@vue/server-renderer/3.3.4
+    name: '@vue/server-renderer'
+    version: 3.3.4
+    peerDependencies:
+      vue: 3.3.4
+    dependencies:
+      '@vue/compiler-ssr': registry.npmmirror.com/@vue/compiler-ssr@3.3.4
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
+      vue: registry.npmmirror.com/vue@3.3.4
+    dev: true
+
+  registry.npmmirror.com/@vue/shared@3.3.4:
+    resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/shared/-/shared-3.3.4.tgz}
+    name: '@vue/shared'
+    version: 3.3.4
+    dev: true
+
   registry.npmmirror.com/abab@2.0.6:
     resolution: {integrity: sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/abab/-/abab-2.0.6.tgz}
     name: abab
@@ -6122,6 +6259,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       cssom: registry.npmmirror.com/cssom@0.3.8
+    dev: true
+
+  registry.npmmirror.com/csstype@3.1.2:
+    resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/csstype/-/csstype-3.1.2.tgz}
+    name: csstype
+    version: 3.1.2
     dev: true
 
   registry.npmmirror.com/data-urls@2.0.0:
@@ -8250,6 +8393,18 @@ packages:
       '@types/istanbul-lib-coverage': registry.npmmirror.com/@types/istanbul-lib-coverage@2.0.4
       convert-source-map: registry.npmmirror.com/convert-source-map@1.9.0
       source-map: registry.npmmirror.com/source-map@0.7.4
+    dev: true
+
+  registry.npmmirror.com/vue@3.3.4:
+    resolution: {integrity: sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue/-/vue-3.3.4.tgz}
+    name: vue
+    version: 3.3.4
+    dependencies:
+      '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom@3.3.4
+      '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc@3.3.4
+      '@vue/runtime-dom': registry.npmmirror.com/@vue/runtime-dom@3.3.4
+      '@vue/server-renderer': registry.npmmirror.com/@vue/server-renderer@3.3.4(vue@3.3.4)
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
     dev: true
 
   registry.npmmirror.com/w3c-hr-time@1.0.2:

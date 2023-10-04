@@ -1,41 +1,13 @@
 <template>
-  <view class="content">
-    <image class="logo" src="/static/logo.png" />
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-    </view>
+  <view class="page-container">
+    <uni-title type="h1" title="h1 一级标题"></uni-title>
+    <uni-title type="h2" title="h2 二级标题"></uni-title>
+    <uni-title type="h3" title="h3 三级标题"></uni-title>
+    <uni-title type="h4" title="h4 四级标题"></uni-title>
+    <uni-title type="h5" title="h5 五级标题"></uni-title>
   </view>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue'
-const title = ref('Hello')
-</script>
+<script setup lang="ts"></script>
 
-<style>
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50rpx;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
-}
-</style>
+<style lang="scss" scoped></style>

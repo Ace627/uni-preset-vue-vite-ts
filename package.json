@@ -55,6 +55,7 @@
     "@dcloudio/uni-mp-toutiao": "3.0.0-3081220230817001",
     "@dcloudio/uni-mp-weixin": "3.0.0-3081220230817001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-3081220230817001",
+    "@dcloudio/uni-ui": "^1.4.28",
     "pinia": "2.0.36",
     "vue": "^3.2.45",
     "vue-i18n": "^9.1.9"
@@ -66,11 +67,12 @@
     "@dcloudio/uni-stacktracey": "3.0.0-3081220230817001",
     "@dcloudio/vite-plugin-uni": "3.0.0-3081220230817001",
     "@types/wechat-miniprogram": "^3.4.3",
+    "@uni-helper/uni-ui-types": "^0.5.11",
     "@vue/runtime-core": "^3.3.4",
     "@vue/tsconfig": "^0.4.0",
-    "unplugin-auto-import": "^0.16.6",
     "sass": "^1.66.1",
     "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.16.6",
     "vite": "^4.4.9",
     "vue-tsc": "^1.8.10"
   }

@@ -1,17 +1,21 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "sourceMap": true,
+    "sourceMap": false,
     "ignoreDeprecations": "5.0",
+    // 编译过程中需要引入的库文件的列表
+    "lib": ["esnext", "dom"],
+    // 要包含的类型声明文件名列表
+    "types": ["@dcloudio/types", "@uni-helper/uni-ui-types", "vite/client"],
+    // 是否移除编译后的 JavaScript 文件的注释
+    "removeComments": true,
     // 解析非相对模块名的基准目录
     "baseUrl": ".",
     // 模块名到基于 baseUrl 的路径映射的列表
     "paths": {
       "@/*": ["./src/*"],
       "#/*": ["./types/*"]
-    },
-    "lib": ["esnext", "dom"],
-    "types": ["@dcloudio/types", "vite/client"]
+    }
   },
   // 定义希望被编译的文件所在的目录 ** 代表任意目录 * 代表任意文件
   "include": ["src/**/*.ts", "types/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts"]

@@ -1,17 +1,26 @@
 {
+  "easycom": {
+    // 是否开启自动扫描
+    "autoscan": true,
+    // 以正则方式自定义组件匹配规则
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
   "pages": [
-    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    // pages 数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
-      "path": "pages/index/index",
+      "path": "pages/index/index", // 页面路径
       "style": {
         "navigationBarTitleText": "首页"
       }
     }
   ],
   "globalStyle": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarTitleText": "uni-app", // 导航栏标题文字内容
+    "navigationBarTextStyle": "black", // 导航栏标题颜色和状态栏前景颜色
+    "navigationBarBackgroundColor": "#F8F8F8", // 导航栏背景色
+    "backgroundColor": "#F8F8F8" // 下拉显示出来的窗口的背景色
   }
 }
