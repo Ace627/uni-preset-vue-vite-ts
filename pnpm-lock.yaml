@@ -76,9 +76,12 @@ devDependencies:
   '@types/wechat-miniprogram':
     specifier: ^3.4.3
     version: 3.4.3
+  '@uni-helper/uni-app-types':
+    specifier: ^0.5.12
+    version: registry.npmmirror.com/@uni-helper/uni-app-types@0.5.12(typescript@5.2.2)
   '@uni-helper/uni-ui-types':
     specifier: ^0.5.11
-    version: registry.npmmirror.com/@uni-helper/uni-ui-types@0.5.11
+    version: registry.npmmirror.com/@uni-helper/uni-ui-types@0.5.11(@uni-helper/uni-app-types@0.5.12)
   '@vue/runtime-core':
     specifier: ^3.3.4
     version: 3.3.4
@@ -5680,8 +5683,23 @@ packages:
       '@types/yargs-parser': registry.npmmirror.com/@types/yargs-parser@21.0.0
     dev: true
 
-  registry.npmmirror.com/@uni-helper/uni-ui-types@0.5.11:
+  registry.npmmirror.com/@uni-helper/uni-app-types@0.5.12(typescript@5.2.2):
+    resolution: {integrity: sha512-SeUEgDgGftI4XEp1AB3C6IFLnRPT83tgTCCmlLUBmQyHh+UhRY+CX4QtgQ0n/kF8txNUq8Bc9YwKlYdXQGx6Ww==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@uni-helper/uni-app-types/-/uni-app-types-0.5.12.tgz}
+    id: registry.npmmirror.com/@uni-helper/uni-app-types/0.5.12
+    name: '@uni-helper/uni-app-types'
+    version: 0.5.12
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      typescript: ^4.8.0 || ^5.0.0
+    dependencies:
+      '@dcloudio/types': registry.npmmirror.com/@dcloudio/types@3.3.3
+      typescript: 5.2.2
+      vue3: registry.npmmirror.com/vue@3.3.4
+    dev: true
+
+  registry.npmmirror.com/@uni-helper/uni-ui-types@0.5.11(@uni-helper/uni-app-types@0.5.12):
     resolution: {integrity: sha512-tGX4llyJBdq9TmNjmZYKu4eueUWUU0F/YgZeTWDgVCmlgYGavhcUL7R+I0Uxe5hGoqFXkNf0ZnmG/WFZWfK/HQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@uni-helper/uni-ui-types/-/uni-ui-types-0.5.11.tgz}
+    id: registry.npmmirror.com/@uni-helper/uni-ui-types/0.5.11
     name: '@uni-helper/uni-ui-types'
     version: 0.5.11
     engines: {node: '>=14.18'}
@@ -5692,6 +5710,7 @@ packages:
         optional: true
     dependencies:
       '@dcloudio/types': registry.npmmirror.com/@dcloudio/types@3.3.3
+      '@uni-helper/uni-app-types': registry.npmmirror.com/@uni-helper/uni-app-types@0.5.12(typescript@5.2.2)
       vue3: registry.npmmirror.com/vue@3.3.4
     dev: true
 
