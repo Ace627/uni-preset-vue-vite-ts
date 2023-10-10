@@ -2,6 +2,7 @@
   <view class="page-container">
     <view class="page-item" @tap="toPage('/template/Login/index1')">登录页面模板1</view>
     <view class="page-item" @tap="toPage('/template/Login/index2')">登录页面模板2</view>
+    <view class="page-item" @tap="toPage('/template/Login/index3')">登录页面模板3</view>
   </view>
 </template>
 
