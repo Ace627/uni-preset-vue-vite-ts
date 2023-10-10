@@ -1,7 +1,7 @@
 <template>
-  <view class="components-bgcolor">
+  <view class="components-bggrad">
     <view class="tips">
-      <text>纯色渐变背景</text>
+      <text>渐变背景变化</text>
     </view>
   </view>
 </template>
@@ -9,14 +9,14 @@
 <script setup lang="ts"></script>
 
 <style lang="scss" scoped>
-.components-bgcolor {
+.components-bggrad {
+  margin: 0;
   width: 100%;
   height: 100vh;
-  margin: 0;
-  padding: 0;
   color: #fff;
-  animation: color-loop 16s infinite;
-  overflow: hidden;
+  background: linear-gradient(45deg, #00f5d4, #01beff, #9a5ce5, #f15bb5);
+  background-size: 500% 500%;
+  animation: gradientBG 6s ease infinite;
 }
 
 .tips {
@@ -28,25 +28,17 @@
   text-align: center;
 }
 
-@keyframes color-loop {
+@keyframes gradientBG {
   0% {
-    background: #f15bb5;
-  }
-
-  25% {
-    background: #00f5d4;
+    background-position: 0% 50%;
   }
 
   50% {
-    background: #01beff;
-  }
-
-  75% {
-    background: #9a5ce5;
+    background-position: 100% 50%;
   }
 
   100% {
-    background: #f15bb5;
+    background-position: 0% 50%;
   }
 }
 </style>

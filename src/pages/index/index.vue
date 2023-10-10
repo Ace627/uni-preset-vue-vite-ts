@@ -11,7 +11,8 @@ const menuList = [
   { text: '登录页面模板1', link: '/template/Login/index1' },
   { text: '登录页面模板2', link: '/template/Login/index2' },
   { text: '登录页面模板3', link: '/template/Login/index3' },
-  { text: '纯色渐变背景', link: '/template/GradientBackground' },
+  { text: '纯色背景', link: '/template/BackgroundColor' },
+  { text: '渐变背景', link: '/template/GradientBackground' },
 ]
 </script>
 
