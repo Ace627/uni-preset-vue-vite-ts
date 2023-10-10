@@ -17,19 +17,22 @@ const menuList = [
 </script>
 
 <style lang="scss" scoped>
+.page-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: flex-start;
+  gap: 32rpx;
+  padding: 32rpx;
+}
+
 .page-item {
   display: grid;
   place-items: center;
-  width: 90%;
+  width: 100%;
   height: 80rpx;
-  margin: 0 auto;
   border-radius: 20rpx;
   color: #fff;
   background-image: linear-gradient(220.55deg, #867ee6 15.27%, #4a86ff 49.16%);
   box-shadow: 0 10rpx 30rpx -10rpx #2b65d9, -4rpx -4rpx 8rpx 0 #ffffffe5, -2rpx 2rpx 2rpx 0 #ffffffcc inset;
-
-  &:not(:first-of-type) {
-    margin-top: 32rpx;
-  }
 }
 </style>
