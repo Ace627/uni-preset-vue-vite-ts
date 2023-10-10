@@ -12,9 +12,11 @@
     // pages 数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
       "path": "pages/index/index", // 页面路径
-      "style": {
-        "navigationBarTitleText": "首页"
-      }
+      "style": { "navigationBarTitleText": "首页" }
+    },
+    {
+      "path": "template/Login/index1",
+      "style": { "navigationBarTitleText": "登录模板1" }
     }
   ],
   "globalStyle": {
