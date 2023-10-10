@@ -17,6 +17,10 @@
     {
       "path": "template/Login/index1",
       "style": { "navigationBarTitleText": "登录模板1" }
+    },
+    {
+      "path": "template/Login/index2",
+      "style": { "navigationBarTitleText": "登录模板2" }
     }
   ],
   "globalStyle": {
