@@ -25,6 +25,10 @@
     {
       "path": "template/Login/index3",
       "style": { "navigationBarTitleText": "登录模板3" }
+    },
+    {
+      "path": "template/GradientBackground",
+      "style": { "navigationBarTitleText": "纯色渐变背景" }
     }
   ],
   "globalStyle": {

@@ -211,6 +211,7 @@ const qqLogin = () => {
 .bgc-img-bottom {
   position: absolute;
   left: -50rpx;
+  z-index: -1;
   bottom: 0;
   width: 50%;
 }

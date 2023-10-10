@@ -1,13 +1,18 @@
 <template>
   <view class="page-container">
-    <view class="page-item" @tap="toPage('/template/Login/index1')">登录页面模板1</view>
-    <view class="page-item" @tap="toPage('/template/Login/index2')">登录页面模板2</view>
-    <view class="page-item" @tap="toPage('/template/Login/index3')">登录页面模板3</view>
+    <view v-for="(v, i) in menuList" :key="i" class="page-item" @tap="toPage(v.link)">{{ v.text }}</view>
   </view>
 </template>
 
 <script setup lang="ts">
 const toPage = (url: string) => uni.navigateTo({ url })
+
+const menuList = [
+  { text: '登录页面模板1', link: '/template/Login/index1' },
+  { text: '登录页面模板2', link: '/template/Login/index2' },
+  { text: '登录页面模板3', link: '/template/Login/index3' },
+  { text: '纯色渐变背景', link: '/template/GradientBackground' },
+]
 </script>
 
 <style lang="scss" scoped>

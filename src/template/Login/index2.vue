@@ -82,7 +82,8 @@ const qqLogin = () => {
 .bgc-img-top {
   width: 100%;
   height: 450rpx;
-  background-image: url('../../static/images/bg-head.png');
+  // background-image: url('../../static/images/bg-head.png');
+  background-image: url('https://zhoukaiwen.com/img/loginImg/head.png');
   background-size: 100%;
 }
 
