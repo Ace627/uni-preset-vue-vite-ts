@@ -20,7 +20,8 @@
     </view>
 
     <view class="cardBox">
-      <view @click="registerAccount"> 注册新账号 </view>
+      <!-- <view @click="registerAccount"> 注册新账号 </view> -->
+      <navigator url="/pages/index/index" hover-class="navigator-hover" open-type="navigate"> 此处原为注册，点我返回首页 </navigator>
     </view>
     <image class="bgc-img-bottom" src="./img/bg2.png"></image>
   </view>
@@ -58,8 +59,9 @@ const registerAccount = () => {
 /** 登录页面渐变背景 */
 .login-bg {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(to bottom, #ff6a9a, #fe7d76);
+  overflow: hidden;
 }
 
 .login-form-container {

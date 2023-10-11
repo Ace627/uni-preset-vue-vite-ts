@@ -4,7 +4,7 @@
       <view class="login-title">
         您好，
         <br />
-        少年何妨梦摘星，敢挽桑弓射玉衡。
+        <navigator url="/pages/index/index" hover-class="navigator-hover" open-type="navigate"> 欢迎使用，点我返回首页 </navigator>
       </view>
     </view>
 
@@ -76,8 +76,9 @@ const qqLogin = () => {
 <style lang="scss" scoped>
 .login-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #fff;
+  overflow: hidden;
 }
 .bgc-img-top {
   width: 100%;

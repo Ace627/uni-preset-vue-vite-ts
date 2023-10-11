@@ -7,7 +7,9 @@
     <!-- 标题 -->
     <view class="login-title">{{ title }}</view>
     <!-- 副标题 -->
-    <view class="login-title-subtitle">少年何妨梦摘星，敢挽桑弓射玉衡。</view>
+    <view class="login-title-subtitle">
+      <navigator url="/pages/index/index" hover-class="navigator-hover" open-type="navigate"> 欢迎使用，点我返回首页 </navigator>
+    </view>
 
     <form class="login-form">
       <view class="login-form-item">
@@ -94,9 +96,11 @@ const qqLogin = () => {
 <style lang="scss" scoped>
 .login-container {
   width: 650rpx;
+  height: 100vh;
   margin: 0 auto;
   color: #000;
   font-size: 28rpx;
+  overflow: hidden;
 
   /** 输入框提示占位符的样式 */
   .uni-input-placeholder {
@@ -132,6 +136,7 @@ const qqLogin = () => {
       position: absolute;
       right: 22rpx;
       top: 22rpx;
+      z-index: 9999;
       height: 50rpx;
       line-height: 50rpx;
       padding: 0 25rpx;
