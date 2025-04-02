@@ -13,4 +13,13 @@ export default defineConfig({
       dirs: ['src/store/modules', 'src/hooks'], // 配置其它需要导入的文件目录
     }),
   ],
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // 避免终端提示 legacy JS API Deprecation Warning
+        silenceDeprecations: ['legacy-js-api'],
+      },
+    },
+  },
 })
