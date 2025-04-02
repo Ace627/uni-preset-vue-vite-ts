@@ -1,0 +1,15 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "lib": ["esnext", "dom"],
+    "types": [
+      "@dcloudio/types" // uni API 相关的 TypeScript 类型，需要安装 @dcloudio/types
+    ]
+  },
+  "include": ["src/**/*.ts", "types/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
