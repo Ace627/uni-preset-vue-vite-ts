@@ -8,8 +8,13 @@
     },
     "lib": ["esnext", "dom"],
     "types": [
-      "@dcloudio/types" // uni API 相关的 TypeScript 类型，需要安装 @dcloudio/types
+      "@dcloudio/types", // uni API 相关的 TypeScript 类型，需要安装 @dcloudio/types
+      "@uni-helper/uni-types" // 为 Vue v3 uni-ui 组件提供 TypeScript 类型
     ]
+  },
+  "vueCompilerOptions": {
+    // 解决 @uni-helper/uni-app-types 导致的模板代码报错
+    "plugins": ["@uni-helper/uni-types/volar-plugin"]
   },
   "include": ["src/**/*.ts", "types/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
