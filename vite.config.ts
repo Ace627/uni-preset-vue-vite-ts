@@ -15,11 +15,6 @@ export default defineConfig({
   ],
 
   css: {
-    preprocessorOptions: {
-      scss: {
-        // 避免终端提示 legacy JS API Deprecation Warning
-        silenceDeprecations: ['legacy-js-api'],
-      },
-    },
+    preprocessorOptions: {},
   },
 })

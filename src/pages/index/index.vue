@@ -1,42 +1,20 @@
 <template>
   <view class="content">
-    <image class="logo" :src="userStore.avatar" />
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-    </view>
+    <wd-button>主要按钮</wd-button>
+    <wd-button type="success">成功按钮</wd-button>
+    <wd-button type="info">信息按钮</wd-button>
+    <wd-button type="warning">警告按钮</wd-button>
+    <wd-button type="error">危险按钮</wd-button>
   </view>
 </template>
 
-<script setup lang="ts">
-const userStore = useUserStore()
+<script setup lang="ts"></script>
 
-const title = ref('安能摧眉折腰事权贵，使我不得开心颜？')
-</script>
-
-<style>
+<style lang="scss" scoped>
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50rpx;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
+  gap: 32rpx;
+  padding: 32rpx;
 }
 </style>

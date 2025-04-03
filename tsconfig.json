@@ -9,7 +9,8 @@
     "lib": ["esnext", "dom"],
     "types": [
       "@dcloudio/types", // uni API 相关的 TypeScript 类型，需要安装 @dcloudio/types
-      "@uni-helper/uni-types" // 为 Vue v3 uni-ui 组件提供 TypeScript 类型
+      "@uni-helper/uni-types", // 为 Vue v3 uni-ui 组件提供 TypeScript 类型
+      "wot-design-uni/global.d.ts"
     ]
   },
   "vueCompilerOptions": {
