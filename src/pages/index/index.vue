@@ -1,5 +1,5 @@
 <template>
-  <view class="content">
+  <view class="content flex flex-col gap-16rpx p-32rpx">
     <wd-button>主要按钮</wd-button>
     <wd-button type="success">成功按钮</wd-button>
     <wd-button type="info">信息按钮</wd-button>
@@ -10,11 +10,4 @@
 
 <script setup lang="ts"></script>
 
-<style lang="scss" scoped>
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 32rpx;
-  padding: 32rpx;
-}
-</style>
+<style lang="scss" scoped></style>

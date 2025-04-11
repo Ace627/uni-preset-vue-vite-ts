@@ -1,11 +1,17 @@
 import { defineConfig } from 'vite'
-import uni from '@dcloudio/vite-plugin-uni'
+import UnoCSS from 'unocss/vite'
+import uniModule from '@dcloudio/vite-plugin-uni'
 import AutoImport from 'unplugin-auto-import/vite'
+
+// @ts-expect-error missing types
+const Uni = uniModule.default || uniModule
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    uni(),
+    Uni(),
+    // 即时按需的原子化 CSS 引擎 UnoCSS
+    UnoCSS({ inspector: false }),
     /** 自带 api 的自动化导入 */
     AutoImport({
       imports: ['vue', 'pinia', 'uni-app'],
