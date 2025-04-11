@@ -84,6 +84,9 @@ importers:
       '@dcloudio/vite-plugin-uni':
         specifier: 3.0.0-4050720250324001
         version: 3.0.0-4050720250324001(postcss@8.5.3)(rollup@4.39.0)(vite@6.2.4(@types/node@22.13.17)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0))(vue@3.5.13(typescript@5.8.2))
+      '@types/wechat-miniprogram':
+        specifier: 3.4.8
+        version: 3.4.8
       '@uni-helper/uni-types':
         specifier: 1.0.0-alpha.6
         version: 1.0.0-alpha.6(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2)))(@uni-helper/uni-cloud-types@1.0.0-alpha.6(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2)))(@uni-helper/uni-ui-types@1.0.0-alpha.6(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2)))(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2)))(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2))
@@ -1578,6 +1581,9 @@ packages:
 
   '@types/stack-utils@2.0.3':
     resolution: {integrity: sha512-9aEbYZ3TbYMznPdcdr3SmIrLXwC/AKZXQeCf9Pgao5CKb8CyHuEX5jzWPTkvregvhRJHcpRO6BFoGW9ycaOkYw==}
+
+  '@types/wechat-miniprogram@3.4.8':
+    resolution: {integrity: sha512-lOqddA707X3SZxVhlZNBZPzYzj7lG/ED2fF30k+aE2oT6R4wfw0Wiup2k2hGrmzYUFyJXfGs01sDCuJMhQMAdg==}
 
   '@types/yargs-parser@21.0.3':
     resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
@@ -6207,6 +6213,8 @@ snapshots:
   '@types/prettier@2.7.3': {}
 
   '@types/stack-utils@2.0.3': {}
+
+  '@types/wechat-miniprogram@3.4.8': {}
 
   '@types/yargs-parser@21.0.3': {}
 
