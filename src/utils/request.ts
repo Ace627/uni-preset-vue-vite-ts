@@ -34,6 +34,8 @@ request.interceptors.response.use(
       message = '系统接口请求超时'
     } else if (message.includes('Request failed with status code')) {
       message = `系统接口 ${message.substr(message.length - 3)} 异常`
+    }else if (message.includes('not in domain list')) {
+      message = '服务器域名未配置'
     }
 
     uni.showModal({ title: '请求失败', content: message, showCancel: false })
