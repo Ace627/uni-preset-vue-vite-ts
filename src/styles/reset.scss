@@ -1,0 +1,11 @@
+page, input, textarea, button, text, checkbox, view, scroll-view, swiper, swiper-item, navigator {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+image, video {
+  display: block;
+  width: 100%;
+  will-change: transform;
+}

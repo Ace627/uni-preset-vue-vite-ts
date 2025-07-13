@@ -1,0 +1,7 @@
+@use './reset.scss';
+
+/* 底部安全区域 */
+.safe-arae-bottom {
+  padding-bottom: constant(safe-area-inset-bottom); /* 兼容旧版 iOS */
+  padding-bottom: env(safe-area-inset-bottom); /* 新版 iOS 和其他支持的浏览器 */
+}

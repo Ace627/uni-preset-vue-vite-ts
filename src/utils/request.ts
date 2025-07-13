@@ -12,6 +12,9 @@ export const request = axios.create({
 
 request.interceptors.request.use(
   (config) => {
+    config.params = config.params || {}
+    // 给 get 请求加上时间戳参数，避免从缓存中拿数据
+    if (config.method?.toUpperCase() === 'GET') Reflect.set(config.params, 'timestamp', Date.now().toString())
     return config
   },
   (error) => {
@@ -21,7 +24,17 @@ request.interceptors.request.use(
 
 request.interceptors.response.use(
   (response) => {
-    return response.data
+    // 未设置状态码则默认成功状态
+    let code = response.data.code || HttpStatusCode.Ok
+    // 获取错误信息
+    let message = response.data.message || `系统未知错误，请反馈给管理员`
+    // 非二进制且状态码为成功状态码 直接返回具体数据 {code, message, result, timestamp}
+    if (code === HttpStatusCode.Ok) {
+      return response.data.result
+    }
+    // 能到这里的基本都是异常返回了
+    uni.showModal({ title: '系统提示', content: message, showCancel: false }) // 此处可统一处理错误的提示消息
+    return Promise.reject(new Error(message))
   },
   (error) => {
     let { message } = error
@@ -36,7 +49,7 @@ request.interceptors.response.use(
       message = '服务器域名未配置'
     }
 
-    uni.showModal({ title: '请求失败', content: message, showCancel: false })
+    uni.showModal({ title: '系统提示', content: message, showCancel: false })
 
     return Promise.reject(error)
   },
