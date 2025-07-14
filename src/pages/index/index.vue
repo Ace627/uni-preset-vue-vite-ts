@@ -8,8 +8,6 @@
   </view>
 </template>
 
-<script setup lang="ts">
-console.log(import.meta.env)
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped></style>
