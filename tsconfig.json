@@ -18,5 +18,6 @@
     // 解决 @uni-helper/uni-app-types 导致的模板代码报错
     "plugins": ["@uni-helper/uni-types/volar-plugin"]
   },
-  "include": ["src/**/*.ts", "types/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": ["src/**/*.ts", "types/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

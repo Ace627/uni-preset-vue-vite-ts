@@ -66,6 +66,7 @@
     "@dcloudio/vite-plugin-uni": "3.0.0-4070520250711001",
     "@types/wechat-miniprogram": "3.4.8",
     "@uni-helper/uni-types": "1.0.0-alpha.6",
+    "@uni-helper/vite-plugin-uni-manifest": "0.2.8",
     "@vue/runtime-core": "^3.4.21",
     "@vue/tsconfig": "0.7.0",
     "sass": "1.77.8",
