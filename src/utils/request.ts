@@ -5,7 +5,7 @@ axios.defaults.adapter = createUniAppAxiosAdapter()
 
 export const request = axios.create({
   // baseURL 将自动加在 url 前面，除非 url 是一个绝对 URL
-  baseURL: 'https://aaa.com/api',
+  baseURL: import.meta.env.VITE_BASE_URL,
   // timeout 指定请求超时的毫秒数(0 表示无超时时间)，如果请求花费了超过 timeout 的时间，请求将被中断
   timeout: 0,
 })
