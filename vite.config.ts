@@ -1,6 +1,5 @@
 import path from 'path'
 import { defineConfig, loadEnv } from 'vite'
-import UnoCSS from 'unocss/vite'
 import uniModule from '@dcloudio/vite-plugin-uni'
 import AutoImport from 'unplugin-auto-import/vite'
 import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
@@ -11,13 +10,14 @@ const Uni = uniModule.default || uniModule
 const root: string = process.cwd()
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command, mode }) => {
+export default async ({ command, mode }) => {
   // 根据当前工作目录中的 `mode` 加载 .env 文件
   // 设置第三个参数为 '' 来加载所有环境变量，而不管是否有 `VITE_` 前缀
   const env = loadEnv(mode, path.resolve(root, 'env')) as unknown as ImportMetaEnv // 对原生环境变量进行二次处理
   const { VITE_CLEAR_COMMENT, VITE_DROP_CONSOLE } = env
+  const UnoCSS = (await import('unocss/vite')).default
 
-  return {
+  return defineConfig({
     plugins: [
       Uni(),
       // 创建 manifest.config.(ts|mts|cts|js|cjs|mjs|json), 然后用 TypeScript 编写你的 manifest.json
@@ -32,12 +32,13 @@ export default defineConfig(({ command, mode }) => {
       }),
     ],
 
+    resolve: {
+      alias: {
+        '@': path.join(process.cwd(), './src'),
+      },
+    },
+
     css: {
-      /**
-       * 如果启用了这个选项，那么 CSS 预处理器会尽可能在 worker 线程中运行；即通过多线程运行 CSS 预处理器，从而极大提高其处理速度
-       * https://cn.vitejs.dev/config/shared-options#css-preprocessormaxworkers
-       */
-      preprocessorMaxWorkers: true,
       preprocessorOptions: {},
     },
 
@@ -53,5 +54,5 @@ export default defineConfig(({ command, mode }) => {
        */
       legalComments: VITE_CLEAR_COMMENT === 'true' ? 'none' : 'inline',
     },
-  }
-})
+  })
+}

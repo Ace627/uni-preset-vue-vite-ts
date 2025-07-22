@@ -1,5 +1,6 @@
-- [Wot Design Uni](https://wot-design-uni.netlify.app) 高颜值、轻量化的 uni-app 组件库
-- [Api 自动加载](https://github.com/antfu/unplugin-auto-import) 直接使用 Composition Api 与 UniApp Api 无需引入
+- [Wot Design Uni 高颜值、轻量化的 uni-app 组件库](https://wot-design-uni.netlify.app)
+- [直接使用 Composition Api 与 UniApp Api 无需引入](https://github.com/antfu/unplugin-auto-import)
+- [使用 TypeScript 编写 uni-app 的 manifest.json](https://github.com/uni-helper/vite-plugin-uni-manifest#readme)
 
 ## 注意事项
 

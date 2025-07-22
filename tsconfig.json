@@ -1,23 +1,42 @@
 {
+  // 继承 Vue 官方推荐的基础 TypeScript 配置
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
+    // 不生成源映射文件（.map 文件），可减小输出体积
     "sourceMap": false,
+    // 指定模块代码生成方式为 ESNext 标准，支持最新的 ES 模块特性
+    "module": "ESNext",
+    // 使用 Node.js 的模块解析策略，处理模块导入时的查找规则
+    "moduleResolution": "Node",
+    // 允许导入 JSON 模块，可直接通过 import 语句引入 .json 文件
+    "resolveJsonModule": true,
+    // 允许从没有默认导出的模块中使用默认导入语法（如 import xxx from 'xxx'）
+    "allowSyntheticDefaultImports": true,
+    // 跳过对声明文件（.d.ts）的类型检查，加快编译速度
+    "skipLibCheck": true,
+    // 配置模块解析的基础目录，用于解析非相对路径的模块
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
+    // 配置路径别名映射，@/* 会被解析为 ./src/*
+    "paths": { "@/*": ["./src/*"] },
+    // 指定编译过程中需要包含的库文件
+    //  - esnext: 支持最新的 ECMAScript 特性
+    //  - dom: 支持浏览器 DOM 相关的类型定义
     "lib": ["esnext", "dom"],
+    // 指定需要包含的类型声明文件
     "types": [
       "@dcloudio/types", // uni API 相关的 TypeScript 类型，需要安装 @dcloudio/types
       "@uni-helper/uni-types", // 为 Vue v3 uni-ui 组件提供 TypeScript 类型
-      "@types/wechat-miniprogram",
-      "wot-design-uni/global.d.ts"
+      "@types/wechat-miniprogram", // 微信小程序相关的类型定义
+      "wot-design-uni/global.d.ts" // wot-design-uni 组件库的全局类型定义
     ]
   },
+  // 配置 Vue 编译器插件
   "vueCompilerOptions": {
     // 解决 @uni-helper/uni-app-types 导致的模板代码报错
     "plugins": ["@uni-helper/uni-types/volar-plugin"]
   },
+  // 指定需要被 TypeScript 处理的文件范围
   "include": ["src/**/*.ts", "types/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  // 项目引用配置，指定当前项目依赖的其他 TypeScript 项目
   "references": [{ "path": "./tsconfig.node.json" }]
 }
