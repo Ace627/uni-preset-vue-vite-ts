@@ -18,6 +18,8 @@ export default async ({ command, mode }) => {
   const UnoCSS = (await import('unocss/vite')).default
 
   return defineConfig({
+    envDir: './env',
+
     plugins: [
       Uni(),
       // 创建 manifest.config.(ts|mts|cts|js|cjs|mjs|json), 然后用 TypeScript 编写你的 manifest.json
