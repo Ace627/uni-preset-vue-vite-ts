@@ -1,4 +1,5 @@
 import path from 'path'
+import UniKuRoot from '@uni-ku/root'
 import { defineConfig, loadEnv } from 'vite'
 import uniModule from '@dcloudio/vite-plugin-uni'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -21,6 +22,7 @@ export default async ({ command, mode }) => {
     envDir: './env',
 
     plugins: [
+      UniKuRoot(), // 若存在改变 pages.json 的插件，需要将 UniKuRoot 放置其后
       Uni(),
       // 创建 manifest.config.(ts|mts|cts|js|cjs|mjs|json), 然后用 TypeScript 编写你的 manifest.json
       UniManifest(),
