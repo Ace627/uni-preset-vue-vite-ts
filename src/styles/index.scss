@@ -1,7 +1,20 @@
 @use './reset.scss';
+@use './theme/common-theme.scss';
+@use './theme/light-theme.scss';
+@use './theme/dark-theme.scss';
+@use './wot-design-ui/wd-card.scss';
+@use './wot-design-ui/wd-navbar.scss';
+@use './wot-design-ui/wd-tabbar.scss';
+
+// Wot Design UI 的内置样式变量查询
+// https://github.com/Moonofweisheng/wot-design-uni/blob/master/src/uni_modules/wot-design-uni/components/common/abstracts/variable.scss
 
 /* 底部安全区域 */
 .safe-arae-bottom {
   padding-bottom: constant(safe-area-inset-bottom); /* 兼容旧版 iOS */
   padding-bottom: env(safe-area-inset-bottom); /* 新版 iOS 和其他支持的浏览器 */
+}
+
+page {
+  background-color: var(--lx-bg-color-page);
 }

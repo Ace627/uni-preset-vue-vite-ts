@@ -1,0 +1,22 @@
+/*
+ * https://wot-ui.cn/component/tabbar.html 
+ */
+.wd-tabbar {
+  --wot-tabbar-item-icon-size: 48rpx;
+  --wot-tabbar-item-title-font-size: 28rpx;
+
+  .wd-tabbar-item {
+    .wd-tabbar-item__body {
+      .wd-tabbar-item__body-icon {
+      }
+      .wd-tabbar-item__body-icon.is-active {
+      }
+      .wd-tabbar-item__body-title {
+        // font-size: 32rpx;
+        display: none;
+      }
+      .wd-tabbar-item__body-title.is-active {
+      }
+    }
+  }
+}
