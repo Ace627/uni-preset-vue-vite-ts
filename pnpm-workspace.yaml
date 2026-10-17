@@ -1,0 +1,14 @@
+
+allowBuilds:
+  "@parcel/watcher": true
+  core-js: true
+  core-js-pure: true
+  esbuild: true
+enablePrePostScripts: true
+engineStrict: false
+fetchRetries: 2
+lockfile: true
+packageManagerStrict: false
+registry: https://registry.npmmirror.com
+saveExact: true
+shamefullyHoist: true

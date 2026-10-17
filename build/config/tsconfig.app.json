@@ -1,0 +1,27 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "../../node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    // 模块加载兼容模式,可以使用 import from 语法导入 commonJS 模块
+    "esModuleInterop": true,
+    // 允许导入 JSON 模块
+    "resolveJsonModule": true,
+    // 生成源映射文件，便于调试（将编译后的JS代码映射回原始TS代码）
+    "sourceMap": false,
+    // 生成相应的 .d.ts 文件，用于类型声明
+    "declaration": false,
+    // 移除编译后文件中的注释
+    "removeComments": true,
+    // 允许从没有默认导出的模块中默认导入
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/*": ["../../src/*"]
+    },
+    "lib": ["esnext", "dom"],
+    "types": [
+      "@dcloudio/types",
+      "@wot-ui/ui/global" // https://wot-ui.cn/guide/quick-use.html#volar-支持
+    ]
+  },
+  "include": ["../../src/**/*.ts", "../../src/**/*.d.ts", "../../src/**/*.tsx", "../../src/**/*.vue"]
+}
