@@ -1,6 +1,5 @@
-
 allowBuilds:
-  "@parcel/watcher": true
+  '@parcel/watcher': true
   core-js: true
   core-js-pure: true
   esbuild: true
@@ -8,6 +7,8 @@ enablePrePostScripts: true
 engineStrict: false
 fetchRetries: 2
 lockfile: true
+overrides:
+  unconfig: 7.5.0
 packageManagerStrict: false
 registry: https://registry.npmmirror.com
 saveExact: true

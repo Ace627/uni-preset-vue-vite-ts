@@ -1,5 +1,6 @@
 {
-  "name": "uni-typescript-template",
+  "name": "uni-preset-vue-vite-ts",
+  "type": "module",
   "version": "0.0.0",
   "scripts": {
     "dev:custom": "uni -p",
@@ -67,11 +68,14 @@
     "@dcloudio/uni-stacktracey": "3.0.0-5020420260813003",
     "@dcloudio/vite-plugin-uni": "3.0.0-5020420260813003",
     "@types/lodash-es": "4.17.12",
+    "@uni-helper/plugin-uni": "0.1.0",
+    "@uni-helper/vite-plugin-uni-manifest": "0.6.1",
     "@uni-ku/root": "1.5.0",
     "@vue/runtime-core": "^3.5.44",
     "@vue/tsconfig": "^0.9.1",
     "sass": "1.105.2",
     "typescript": "^6.0.3",
+    "uni-unocss": "1.0.2",
     "unplugin-auto-import": "21.1.0",
     "vite": "5.2.8",
     "vue-tsc": "^3.3.13"

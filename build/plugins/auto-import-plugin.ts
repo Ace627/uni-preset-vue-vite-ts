@@ -1,8 +1,8 @@
 import type { PluginOption } from 'vite'
+import AutoImport from 'unplugin-auto-import/vite'
 
 /** Vue / Pinia / uni-app API 按需自动导入 */
-export async function registerAutoImport(): Promise<PluginOption> {
-  const AutoImport = (await import('unplugin-auto-import/vite')).default
+export function registerAutoImport(): PluginOption {
   return AutoImport({
     imports: ['vue', 'pinia', 'uni-app'],
     dts: 'src/types/auto-generate/auto-import.d.ts',
