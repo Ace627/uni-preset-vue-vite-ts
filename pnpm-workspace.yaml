@@ -1,15 +1,27 @@
-allowBuilds:
-  '@parcel/watcher': true
-  core-js: true
-  core-js-pure: true
-  esbuild: true
+# 启用包的 pre/post 生命周期脚本（如 install 前后钩子）
 enablePrePostScripts: true
+# 不严格要求 Node 版本匹配 engines 字段（宽松校验）
 engineStrict: false
+# 下载包失败时的重试次数
 fetchRetries: 2
+# 使用 lockfile（pnpm-lock.yaml）锁定依赖版本，保证安装可复现
 lockfile: true
+# npm 镜像源（国内加速下载）
+registry: https://registry.npmmirror.com
+# 保存依赖时锁定精确版本（不带 ^ ~ 前缀）
+saveExact: true
+# 把所有依赖提升到根 node_modules（兼容只在根目录找包的工具）
+shamefullyHoist: true
+# 只安装发布超过指定分钟数的包版本（0 表示不限制，防供应链投毒）
+minimumReleaseAge: 0
+
+# 强制锁定指定依赖的版本（无视其他包声明的范围）
 overrides:
   unconfig: 7.5.0
-packageManagerStrict: false
-registry: https://registry.npmmirror.com
-saveExact: true
-shamefullyHoist: true
+
+# 允许运行安装脚本（postinstall）的依赖白名单
+allowBuilds:
+  '@parcel/watcher': true # 文件监听（用于开发时自动重编译）
+  core-js: true # JS polyfill 垫片库
+  core-js-pure: true # core-js 的纯版本（不带全局污染）
+  esbuild: true # 极速 JS/TS 打包编译器

@@ -1,4 +1,4 @@
-import { PluginOption } from 'vite'
+import type { PluginOption } from 'vite'
 import UnoCSS from 'uni-unocss'
 import UniKuRoot from '@uni-ku/root'
 import Uni from '@uni-helper/plugin-uni'
@@ -6,7 +6,7 @@ import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import { registerAutoImport } from './auto-import-plugin'
 
 /** 汇总并注册所有 Vite 插件 */
-export async function setupVitePlugins(): Promise<PluginOption[]> {
+export function setupVitePlugins(): PluginOption[] {
   const plugins: PluginOption[] = []
 
   // UnoCSS 原子化 CSS 引擎（提供 class 原子样式与 uni-app 适配）

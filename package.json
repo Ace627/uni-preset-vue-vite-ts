@@ -2,6 +2,7 @@
   "name": "uni-preset-vue-vite-ts",
   "type": "module",
   "version": "0.0.0",
+  "packageManager": "pnpm@12.16.1",
   "scripts": {
     "dev:custom": "uni -p",
     "dev:h5": "uni",
@@ -54,12 +55,11 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-5020420260813003",
     "@dcloudio/uni-mp-xhs": "3.0.0-5020420260813003",
     "@dcloudio/uni-quickapp-webview": "3.0.0-5020420260813003",
-    "@wot-ui/ui": "2.3.2",
+    "@wot-ui/ui": "2.4.0",
     "dayjs": "1.11.23",
     "lodash-es": "4.18.1",
     "pinia": "4.1.0",
-    "vue": "^3.5.44",
-    "vue-i18n": "^11.4.14"
+    "vue": "^3.5.44"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.32",
@@ -73,7 +73,7 @@
     "@uni-ku/root": "1.5.0",
     "@vue/runtime-core": "^3.5.44",
     "@vue/tsconfig": "^0.9.1",
-    "sass": "1.105.2",
+    "sass": "1.107.0",
     "typescript": "^6.0.3",
     "uni-unocss": "1.0.2",
     "unplugin-auto-import": "21.1.0",

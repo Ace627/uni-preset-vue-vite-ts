@@ -10,6 +10,7 @@ export default defineConfig({
 
   /** 受 Windi CSS 的 启发，快捷方式可让你将多个规则组合成一个简写 https://unocss.nodejs.cn/config/shortcuts */
   shortcuts: {
+    'wh-full': 'w-full h-full',
     'flex-center': 'flex justify-center items-center', // 利用 flex 使子元素垂直水平居中
     clearFix: 'before:content-empty before:table before:clear-both after:content-empty after:table after:clear-both', // 同时解决高度塌陷和外边距折叠的问题
   },

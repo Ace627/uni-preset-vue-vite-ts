@@ -1,9 +1,9 @@
 <template>
-  <wd-config-provider :theme="settingStore.theme">
+  <Layout>
     <KuRootView />
-  </wd-config-provider>
+  </Layout>
 </template>
 
 <script setup lang="ts">
-const settingStore = useSettingStore()
+import Layout from '@/layout/index.vue'
 </script>
