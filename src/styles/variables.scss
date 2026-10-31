@@ -1,0 +1,19 @@
+// https://github.com/wot-ui/wot-ui/tree/main/src/uni_modules/wot-ui/styles/theme
+
+.wot-theme-light .app-container {
+  --wot-bg-color-page: #ededed;
+
+  --wot-navbar-bg: var(--wot-bg-color-page);
+
+  --wot-tabbar-bg: #f7f7f7;
+}
+
+.wot-theme-dark .app-container.theme-dark {
+  --wot-bg-color-page: #111111;
+
+  --wot-navbar-bg: #191919;
+
+  --wot-tabbar-bg: #1e1e1e;
+
+  --wot-cell-bg: #191919;
+}

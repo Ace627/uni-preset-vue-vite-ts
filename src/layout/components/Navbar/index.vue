@@ -1,11 +1,12 @@
 <template>
   <!-- https://wot-ui.cn/component/navbar.html -->
-  <wd-navbar fixed placeholder safe-area-inset-top :title="title"></wd-navbar>
+  <wd-navbar fixed placeholder safe-area-inset-top :title="title" :left-arrow="!isTabbarPage()" @click-left="handleBack"></wd-navbar>
 </template>
 
 <script setup lang="ts">
 defineOptions({ name: 'Navbar' })
 import pages from '@/pages.json'
+import { isTabbarPage } from '@/router/router.helper'
 
 /** 全部页面（主包 + 分包）：分包页面路径 = 分包 root + 页面 path，与完整路由一致 */
 // 主包页面列表（pages.json 的 pages 字段）
@@ -21,6 +22,11 @@ const currentRoute = getCurrentPages().at(-1)?.route ?? ''
 
 // 用当前路由查标题，查不到时用项目名兜底
 const title = navbarPageMap[currentRoute] ?? 'uni-preset-vue-vite-ts'
+
+/** 返回上一页；没有上一页时兜底回首页 */
+function handleBack() {
+  getCurrentPages().length > 1 ? uni.navigateBack({ delta: 1 }) : uni.reLaunch({ url: '/pages/index/index' })
+}
 </script>
 
 <style lang="scss" scoped></style>

@@ -1,6 +1,10 @@
 import { defineConfig, presetUni } from 'uni-unocss'
 
 export default defineConfig({
+  content: {
+    filesystem: ['src/**/*.{vue,ts,tsx}'], // 启动即全量收集 token，冷启动不再缺规则
+  },
+
   presets: [
     presetUni(), // uni-app 预设，必需，自动处理 rpx/px 单位转换等
   ],

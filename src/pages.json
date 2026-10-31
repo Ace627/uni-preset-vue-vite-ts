@@ -14,13 +14,17 @@
     {
       "path": "pages/mine/index",
       "style": { "navigationBarTitleText": "我的" }
+    },
+    {
+      "path": "pages/system/setting",
+      "style": { "navigationBarTitleText": "系统设置" }
     }
   ],
   "globalStyle": {
     "navigationStyle": "custom",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-preset-vue-vite-ts",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarBackgroundColor": "#F5F5F5",
+    "backgroundColor": "#F5F5F5"
   }
 }

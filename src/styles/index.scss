@@ -1,14 +1,11 @@
+@use './variables.scss';
 @use './reset.scss';
-
-page {
-  background-color: #f5f5f5;
-}
 
 /* 每个页面都根元素建议挂载 */
 .page-container {
   position: relative;
   width: 100%;
-  /* 占满 Navbar 之外的剩余高度；内容超长时随内容增长，页面级滚动不受影响 */
-  flex: 1;
+  flex: 1; // 占满 Navbar 之外的剩余高度；内容超长时随内容增长，页面级滚动不受影响
   padding-bottom: calc(var(--wd-tabbar-height, 50px) + env(safe-area-inset-bottom));
+  background-color: var(--wot-bg-color-page);
 }
